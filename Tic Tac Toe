@@ -1,0 +1,115 @@
+Tic Tac Toe
+==============
+
+Tic Tac Toe
+
+
+
+<!DOCTYPE html>
+                   <html>
+
+   <head>  Tic Tac Toe<\head>
+                   <body>
+
+                   <input type="button" id="A1" value="  " onclick="tictactoe(this)">  
+                   <input type="button" id="A2" value="  " onclick="tictactoe(this)">
+                   <input type="button" id="A3" value="  " onclick="tictactoe(this)">
+                   <br />
+                   <input type="button" id="A4" value="  " onclick="tictactoe(this)">
+                   <input type="button" id="A5" value="  " onclick="tictactoe(this)">
+                   <input type="button" id="A6" value="  " onclick="tictactoe(this)">
+                   <br />
+                   <input type="button" id="A7" value="  " onclick="tictactoe(this)">
+                   <input type="button" id="A8" value="  " onclick="tictactoe(this)">
+                   <input type="button" id="A9" value="  " onclick="tictactoe(this)">
+                   <br />
+
+                   <script>
+                   var nummoves=0;
+                   var nummoves1=1;
+                   var nummoves2=2;
+                   var nummoves3=3;
+                   var nummoves4=4;
+                   var nummoves5=5;
+                   var nummoves6=6;
+                   var nummoves7=7;
+                   var nummoves8=8;
+                   var nummoves9=9;
+                   var comp;
+
+                   function tictactoe(square)
+                   {
+
+                   var check=["c1","c2","c3","c4","c5","c6","c7","c8","c9"]
+                   check[0]=document.getElementById("A1");
+                   check[1]=document.getElementById("A2");
+                   check[2]=document.getElementById("A3");
+                   check[3]=document.getElementById("A4");
+                   check[4]=document.getElementById("A5");
+                   check[5]=document.getElementById("A6");
+                   check[6]=document.getElementById("A7");
+                   check[7]=document.getElementById("A8");
+                   check[8]=document.getElementById("A9");
+                   comp=check[Math.floor(Math.random()*check.length)];
+
+
+                   if(nummoves==0)
+                   {
+                   square.value="X";
+                   }
+
+                   if(nummoves1==1)
+                   {
+                   comp.value="O";
+                   }
+
+
+                   if(nummoves2==2)
+                   {
+                   square.value="X";
+                   }
+
+                   if(nummoves3==3)
+                   {
+                   comp.value="O";
+                   }
+
+                   if(nummoves4==4)
+                   {
+                   square.value="X";
+                   }
+
+                   if(nummoves5==5)
+                   {
+                   comp.value="O";
+                    }
+
+
+                 if(nummoves6==6)
+                 {
+                 square.value="X";
+                 }
+
+                if(nummoves7==7)
+                {
+                comp.value="O";
+                }
+
+
+                if(nummoves8==8)
+                {
+                 square.value="X";
+                }
+
+              if(nummoves9==9)
+               {
+               comp.value="O";;
+               }
+              }
+
+
+
+
+               </script>
+                </body>
+                 </html> 
